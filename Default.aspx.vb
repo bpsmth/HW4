@@ -9,6 +9,7 @@ Partial Class _Default
         TBPostTax.Text = ""
         TBPreTax.Text = ""
         TBWage.Text = ""
+        LblResult.Text = ""
 
     End Sub
 
@@ -27,8 +28,18 @@ Partial Class _Default
 
 
         hours = CDbl(TBHours.Text)
-        pretax = CDbl(TBPreTax.Text)
-        posttax = CDbl(TBPostTax.Text)
+        If TBPreTax.Text = "" Then
+            pretax = 0
+        ElseIf TBPreTax.Text <> "" Then
+            pretax = CDbl(TBPreTax.Text)
+        End If
+
+        If TBPostTax.Text = "" Then
+            posttax = 0
+        ElseIf TBPostTax.Text <> "" Then
+            posttax = CDbl(TBPostTax.Text)
+        End If
+
         wage = CDbl(TBWage.Text)
 
         gross = hours * wage

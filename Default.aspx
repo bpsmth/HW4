@@ -24,11 +24,9 @@
         <br />
         <asp:Label ID="LblPreTax" runat="server" Text="Pre-Tax Deductions:"></asp:Label>
         <asp:TextBox ID="TBPreTax" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="rfdPreTax" runat="server" ControlToValidate="TBPreTax" ErrorMessage="*Enter Deductions!"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="LblPostTax" runat="server" Text="Post-Tax Deductions:"></asp:Label>
         <asp:TextBox ID="TBPostTax" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="rfdPostTax" runat="server" ControlToValidate="TBPostTax" ErrorMessage="*Enter Deductions!"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Button ID="ButtonCalc" runat="server" Text="Calculate" />

@@ -2,11 +2,13 @@
 Partial Class _Default
     Inherits System.Web.UI.Page
 
-    Protected Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TBWage.TextChanged
 
-    End Sub
 
     Protected Sub ButtonClear_Click(sender As Object, e As EventArgs) Handles ButtonClear.Click
+        TBHours.Text = ""
+        TBPostTax.Text = ""
+        TBPreTax.Text = ""
+        TBWage.Text = ""
 
     End Sub
 
@@ -43,7 +45,7 @@ Partial Class _Default
 
         net = net - posttax
 
-        final = String.Format("{0:C}", net)
+        final = "Your net pay for the period is: " + String.Format("{0:C}", net)
 
 
         LblResult.Text = final
@@ -51,4 +53,5 @@ Partial Class _Default
 
 
     End Sub
+
 End Class

@@ -15,15 +15,19 @@
         <br />
         <asp:Label ID="LblWage" runat="server" Text="Hourly Wage: "></asp:Label>
         <asp:TextBox ID="TBWage" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfdWage" runat="server" ControlToValidate="TBWage" ErrorMessage="*Enter an hourly wage!"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="LblHours" runat="server" Text="Hours Worked:"></asp:Label>
         <asp:TextBox ID="TBHours" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfdHours" runat="server" ControlToValidate="TBHours" ErrorMessage="*Enter Hours Worked!"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="LblPreTax" runat="server" Text="Pre-Tax Deductions:"></asp:Label>
         <asp:TextBox ID="TBPreTax" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfdPreTax" runat="server" ControlToValidate="TBPreTax" ErrorMessage="*Enter Deductions!"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="LblPostTax" runat="server" Text="Post-Tax Deductions:"></asp:Label>
         <asp:TextBox ID="TBPostTax" runat="server"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfdPostTax" runat="server" ControlToValidate="TBPostTax" ErrorMessage="*Enter Deductions!"></asp:RequiredFieldValidator>
         <br />
         <br />
         <asp:Button ID="ButtonCalc" runat="server" Text="Calculate" />

@@ -1,0 +1,7 @@
+#LblWage{padding-right: 10px;}
+#LblHours{padding-right: 10px;}
+#LblPreTax{padding-right: 10px;}
+#LblPostTax{padding-right: 10px;}
+
+#container{background-color: white; width:1024px; margin:0 auto; padding:15px; border-bottom: solid 3px black;border-top: solid 3px black; border-left: solid 3px black; border-right: solid 3px black;}
+Body{background-color: grey;}

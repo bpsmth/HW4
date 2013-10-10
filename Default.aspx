@@ -4,12 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styling.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    
+    <div id="container">
+        <h1>-Braden's Salary Calculator-</h1>
         <asp:Label ID="LblInstruct" runat="server" Text="Enter info to calculate net pay:"></asp:Label>
         <br />
         <br />
